@@ -16,5 +16,5 @@ authors:
   - Jaewook Lee
 links:
   Article: https://journals.sagepub.com/doi/10.1177/14789299231217188
-  Award announcement: https://psr.brunel.ac.uk/2024/03/19/the-best-paper-award-2023-the-winner/
+  Award announcement: https://x.com/PolStudiesRev/status/1765426365560717643
 ---
