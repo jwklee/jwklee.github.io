@@ -4,7 +4,7 @@ pages:
 #- name: Home
 #  url: /
 - name: Home
-  url: /index
+  url: /index_layout2
 - name: Research
   url: /publications
 - name: Teaching
