@@ -5,7 +5,7 @@ pages:
   url: /index
 - name: Research
   url: /publications
-- name: Teaching
+- name: Showcase
   url: /showcase
-#- name: Showcase
-#  url: /showcase
+- name: Teaching
+  url: /teaching
