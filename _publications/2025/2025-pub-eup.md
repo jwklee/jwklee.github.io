@@ -1,5 +1,5 @@
 ---
-title:          "Pushed by Markets, Pulled by Machines: Economic Pressures and Backlash to the EU""
+title:          "Pushed by Markets, Pulled by Machines: Economic Pressures and Backlash to the EU"
 date:           2025-10-31 00:01:00 +0100
 selected:       true
 pub:            "European Union Politics"
