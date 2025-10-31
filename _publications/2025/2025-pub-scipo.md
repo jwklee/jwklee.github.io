@@ -12,7 +12,7 @@ abstract: >-
 cover:
 authors:
   - Matteo Mandelli
-  - **Jaewook Lee**
+  - Jaewook Lee
 links:
   Working Paper: https://sciencespo.hal.science/hal-04976555
 ---
