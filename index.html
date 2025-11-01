@@ -1,124 +1,26 @@
 ---
-layout: page
-title: Home
+layout: default
+title : Homepage
 navbar_title: Home
-description: Homepage of Jaewook Lee
 ---
+{% include widgets/profile_card.html %}
 
-<style>
-  /* Layout adjustments for homepage */
-  .home-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
+{% if site.data.display.homepage.show_experience %}
+    {% include widgets/experience_card.html %}
+{% endif %}
 
-  .home-section {
-    margin-bottom: 2rem;
-  }
+{% if site.data.display.homepage.show_news %}
+    {% assign count_news = site.news | size %}
+    {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+    {% endif %}
+{% endif %}
 
-  /* Headings: slightly enlarged for key academic sections */
-  .home-section h2 {
-    font-size: 1.3em;
-    margin-bottom: 0.8em;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.3em;
-  }
-
-  /* Honors & Awards styling */
-  .honors-section {
-    margin-top: 4rem; /* extra spacing from above */
-  }
-
-  .honors-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem 2rem;
-  }
-
-  .honors-grid li {
-    list-style-type: disc;
-    margin-left: 1.2em;
-    line-height: 1.5;
-  }
-
-  /* Responsive layout for smaller screens */
-  @media (max-width: 768px) {
-    .home-columns {
-      grid-template-columns: 1fr;
-    }
-    .honors-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
-
-<section class="homepage">
-  <div class="intro">
-    <h1>Jaewook Lee</h1>
-    <p>
-      I am a Post-Doctoral Researcher at Leiden University working on the Horizon Europe <em>TransEuroWorkS</em> project. My research examines how structural economic transformations — such as automation, globalization, and the green transition — shape public opinion, welfare states, and political behavior in advanced capitalist democracies.
-    </p>
-  </div>
-
-  <div class="home-columns">
-    <!-- Left column: Academic Positions -->
-    <div class="home-section">
-      <h2>Academic Positions</h2>
-      {% for item in site.data.profile.experience %}
-      <div class="item">
-        <strong>{{ item.title }}</strong><br>
-        {{ item.institution }}<br>
-        <span class="date">{{ item.date }}</span>
-      </div>
-      {% endfor %}
-    </div>
-
-    <!-- Right column: Education -->
-    <div class="home-section">
-      <h2>Education</h2>
-      {% for item in site.data.profile.education %}
-      <div class="item">
-        <strong>{{ item.degree }}</strong><br>
-        {{ item.institution }}<br>
-        <span class="date">{{ item.date }}</span>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="honors-section home-section">
-    <h2>Honors & Awards</h2>
-    <ul class="honors-grid">
-      {% for item in site.data.profile.awards %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <hr>
-
-  <div class="home-section">
-    <h2>Recent News</h2>
-    <ul>
-      {% assign news = site.news | sort: 'date' | reverse | slice: 0, 10 %}
-      {% for item in news %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a> — {{ item.date | date: '%b %Y' }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="home-section">
-    <h2>Selected Publications</h2>
-    <ul>
-      {% assign pubs = site.publications | where_exp: 'p', 'p.selected == true' %}
-      {% for pub in pubs %}
-      <li>
-        <a href="{{ pub.url }}">{{ pub.title }}</a><br>
-        <small>{{ pub.authors }}. <em>{{ pub.journal }}</em>, {{ pub.year }}</small>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+{% if site.data.display.homepage.show_selected_publications %}
+    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {% 
+        include widgets/publication_card.html 
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications'
+    %}
+{% endif %}
