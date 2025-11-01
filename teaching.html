@@ -2,27 +2,201 @@
 layout: page
 title: Teaching
 navbar_title: Teaching
-description: Courses and teaching philosophy of Jaewook Lee
+description: Teaching philosophy and courses of Jaewook Lee
 ---
 
+<style>
+  /* ===== Page Intro Layout ===== */
+  .page-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5em;
+    margin-bottom: 2.5em;
+  }
+
+  .page-intro-text {
+    flex: 2.5;
+    line-height: 1.7;
+  }
+
+  .image-container {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  .image-caption {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.6em;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .image-caption details summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .image-caption details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .page-intro {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+
+    .image-container img {
+      margin-top: 1.8em;
+      max-width: 80%;
+    }
+
+    .image-caption {
+      max-width: 80%;
+    }
+  }
+
+  /* ===== Section Formatting ===== */
+  .teaching-section {
+    margin-bottom: 3em;
+    line-height: 1.75;
+  }
+
+  .teaching-section h2 {
+    margin-bottom: 0.8em;
+    font-size: 1.3em;
+  }
+
+  .teaching-section p {
+    margin-bottom: 1.2em;
+  }
+
+  .courses-list {
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  .courses-list li {
+    margin-bottom: 0.4em;
+  }
+
+  .courses-note {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.8em;
+  }
+</style>
+
 <section class="teaching-page">
+
+  <!-- ===== Intro Section ===== -->
   <div class="page-intro">
-    <h1>Teaching</h1>
-    <p>
-      I have two main objectives for students’ learning experiences: to provide fundamental knowledge and critical thinking tools applicable to students’ future careers in various academic and non-academic fields; to facilitate the appreciation for complex, big-picture issues inherent in processes of politics. My approach actualizes these objectives by creating a dedicated and engaged learning environment where I actively facilitate my students’ learning and engagement with politics. Through the courses, I expect students to enhance critical self-awareness and understanding of politics that impact individuals and the world.
-    </p>
+    <div class="page-intro-text">
+      <h1>Teaching</h1>
+      <p>
+        My teaching philosophy emphasizes clarity, inclusivity, and <strong>learning by doing</strong>.
+        I design courses that combine theoretical rigor with practical applications—such as data analysis,
+        survey design, and policy writing—to help students connect abstract theories in political science
+        and political economy to real-world challenges.
+      </p>
+      <p>
+        Across all my courses, I aim to cultivate curiosity, analytical rigor, and an appreciation for
+        complexity. I encourage students to see political and economic problems as interconnected and to
+        develop the critical tools necessary to engage with them creatively and empirically.
+      </p>
+    </div>
+
+    <!-- ===== Right-side Image ===== -->
+    <div class="image-container">
+      <img src="/assets/images/etc/image_learningpng"
+           alt="Teaching illustration: interactive and hands-on learning — AI generated">
+    </div>
   </div>
 
   <hr>
 
-  <div class="courses">
-    <h2>Courses Offered</h2>
-    <ul>
+  <!-- ===== Teaching Philosophy ===== -->
+  <div class="teaching-section">
+    <h2>Teaching Philosophy</h2>
+    <p>
+      I view political science education as a process of <strong>guided discovery</strong>. My classrooms are
+      interactive, inclusive, and discussion-driven, fostering an environment where students can engage with
+      different perspectives and apply theoretical insights to empirical cases. I emphasize accessibility and
+      clarity—translating complex ideas into structured, intuitive frameworks that allow students to build
+      confidence in their analytical abilities.
+    </p>
+    <p>
+      Whether in large introductory lectures or small seminars, I encourage students to think like
+      researchers—to ask good questions, evaluate evidence, and communicate their ideas clearly. I believe
+      that developing these skills not only deepens understanding of political and economic phenomena but
+      also equips students for leadership in diverse professional and academic contexts.
+    </p>
+  </div>
+
+  <!-- ===== Learning by Doing ===== -->
+  <div class="teaching-section">
+    <h2>Learning by Doing: Methods and Applications</h2>
+    <p>
+      I emphasize <strong>learning by doing</strong> through coding labs, simulations, and applied policy assignments
+      that replicate real-world decision-making. These activities help students develop transferable skills in
+      research design, quantitative analysis, and clear communication.
+    </p>
+    <p>
+      My classes often include structured debates and role-playing exercises—simulating negotiations between
+      labor unions, employers, and policymakers on issues such as welfare reform and environmental taxation—
+      as well as digital simulations like <em>Statecraft</em>. In methods courses, students also learn data
+      analysis using R and complete independent projects that foster computational literacy and critical
+      engagement with empirical evidence.
+    </p>
+  </div>
+
+  <!-- ===== Courses and Pedagogical Approach ===== -->
+  <div class="teaching-section">
+    <h2>Courses and Pedagogical Approach</h2>
+    <p>
+      My teaching portfolio spans comparative politics, political economy, and quantitative methods. I have
+      taught and co-taught a range of courses across institutions in North America, Europe, and East Asia. My teaching emphasizes active learning, clear communication,
+      and interdisciplinary thinking that bridges politics, economics, and policy.
+    </p>
+    <ul class="courses-list">
       <li>Comparative Political Economy</li>
       <li>International Political Economy</li>
-      <li>Political Economy of Inequality</li>
-      <li>Political Economy of Structural Economic Transformations</li>
+      <li>Comparative Public Policy</li>
+      <li>Political Economy of Economic Transformations: Migration, Technology, and Climate Change</li>
+      <li>Research Methods: Thinking Like a Political Scientist</li>
     </ul>
-    <p><em>Syllabi and further information are available upon request.</em></p>
+    <p class="courses-note">
+      <em>Syllabi and further information are available upon request.</em>
+    </p>
   </div>
+
+  <!-- ===== Teaching Feedback ===== -->
+  <div class="teaching-section">
+    <h2>Student Feedback</h2>
+    <p>
+      Students consistently highlight the clarity, engagement, and inclusiveness of my teaching.
+      Below are selected comments from course evaluations that reflect my approach to creating
+      an accessible and stimulating learning environment:
+    </p>
+    <blockquote>
+      “A very engaging instructor. Was able to make class entertaining and fun.”<br><br>
+      “Really knowledgeable and was able to help us whenever we had questions. Always tried his best to make the content and discussion sections understandable and enjoyable.”<br><br>
+      “I really enjoyed how Jae tied the topics we learned in lecture to modern day events and broke down the exact definitions and significance of topics to fit into the overarching theme of comparative politics.”<br><br>
+      “Jae was great, best political science TA I have had so far.”
+    </blockquote>
+  </div>
+
 </section>
