@@ -90,3 +90,29 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+/* ===== Homepage Experience/Education + Honors tweaks ===== */
+
+/* Slightly enlarge section headings in the experience widget */
+.xp-title { 
+  font-size: 1.15rem; 
+}
+
+/* Two-column list for Honors & Awards on desktop; single on mobile */
+.honors-two-col {
+  column-count: 2;
+  column-gap: 2rem;
+}
+@media (max-width: 768px) {
+  .honors-two-col { column-count: 1; }
+}
+
+/* Avoid awkward column breaks and add breathing room */
+.honors-two-col > li { 
+  break-inside: avoid; 
+  margin-bottom: 0.5rem; 
+}
+
+/* (Optional) Slightly more spacing between items in the lists */
+.media.mb-1 { 
+  margin-bottom: 0.6rem !important; 
+}
