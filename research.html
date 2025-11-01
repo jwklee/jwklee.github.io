@@ -21,8 +21,8 @@ description: Research overview of Jaewook Lee
   }
 
   .page-intro img {
-    flex: 1.8;
-    max-width: 560px; /* increased from 180px */
+    flex: 1.5;
+    max-width: 90%; /* increased from 180px */
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -40,6 +40,29 @@ description: Research overview of Jaewook Lee
       margin-top: 1.8em;
       max-width: 80%;
     }
+
+    .image-container {
+      flex: 1.5;
+      text-align: center;
+    }
+    
+    .image-container img {
+      max-width: 550px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    }
+    
+    .image-caption {
+      font-size: 0.85em;
+      color: #666;
+      margin-top: 0.6em;
+      line-height: 1.4;
+      text-align: center;
+    }
+}
+
   }
 
   /* ===== Section Titles ===== */
@@ -100,8 +123,17 @@ description: Research overview of Jaewook Lee
       </p>
     </div>
 
-    <img src="/assets/images/etc/research_image-min.png" alt="Research illustration: Labor Migration, Automation, and Climate Change — AI Generated Image, Dutch Golden Age style">
+  <div class="image-container">
+    <img src="/assets/images/etc/research_image-min.png"
+         alt="Research illustration: Labor Migration, Automation, and Climate Change — AI Generated Image, Dutch Golden Age style">
+    <p class="image-caption">
+      <em>AI-generated image</em> — Prompt: “A Dutch painting in the 17th style,  
+      showing economic challenges from labor migration (left), automation (center), and climate change (right), 
+      with people both worried and happy.”
+    </p>
   </div>
+</div>
+
 
   <hr>
 
