@@ -6,57 +6,63 @@ description: Research overview of Jaewook Lee
 ---
 
 <style>
-  .research-page h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.3em;
+  .page-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
   }
-  .research-page article.paper {
-    line-height: 1.6;
-    margin-bottom: 2.5em;
+
+  .page-intro-text {
+    flex: 3;
   }
-  .research-page details summary {
-    cursor: pointer;
-    font-weight: 600;
-    margin-top: 0.5em;
+
+  .page-intro img {
+    flex: 1;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
-  .work-in-progress {
-    margin-top: 3em;
-    line-height: 1.6;
-  }
-  /* Match header size with 'Working Papers' */
-  .work-in-progress h2 {
-    margin-bottom: 1em;
-  }
-  .work-in-progress a {
-    text-decoration: none;
-    color: #1a73e8;
-  }
-  .work-in-progress a:hover {
-    text-decoration: underline;
+
+  @media (max-width: 768px) {
+    .page-intro {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-intro img {
+      margin-top: 1.5em;
+    }
   }
 </style>
 
-
 <section class="research-page">
   <div class="page-intro">
-    <h1>Research</h1>
-    <p>
-      How do structural transformations in advanced capitalist economies affect the political demands of individuals and interest groups?
-      My research examines the intricate relationship among occupation, social identity, and political preferences in governing macro-societal transformations like globalization, automation, and climate change.
-    </p>
-    <p>
-      For my dissertation project titled <em>Politics Navigating Macroeconomic Transformations: Labor Migration and Automation in Western Europe</em>,
-      I focus on labor migration and automation in Western Europe, which bring economic benefits and job-displacing concerns.
-      The project examines how both double-edged transformations affect public support for social welfare policies,
-      exploring public opinion and politics among business associations, labor unions, and political parties.
-    </p>
-    <p>
-      I emphasize the pivotal role of occupation as a micro-foundation of economic interest that shapes political choices.
-      Additionally, I investigate how social identities (e.g., race and gender), organizational affiliations (e.g., union membership),
-      and informational cues (e.g., educating policy implications) influence an individual’s political decisions.
-      My research sheds light on the multifaceted nature of political decision-making processes and preferences by unraveling
-      the dynamics between these factors and occupation, especially amidst significant societal changes.
-    </p>
+    <div class="page-intro-text">
+      <h1>Research</h1>
+      <p>
+        How do structural transformations in advanced capitalist economies affect the political demands of individuals and interest groups?
+        My research examines the intricate relationship among occupation, social identity, and political preferences in governing macro-societal transformations like globalization, automation, and climate change.
+      </p>
+      <p>
+        For my dissertation project titled <em>Politics Navigating Macroeconomic Transformations: Labor Migration and Automation in Western Europe</em>,
+        I focus on labor migration and automation in Western Europe, which bring economic benefits and job-displacing concerns.
+        The project examines how both double-edged transformations affect public support for social welfare policies,
+        exploring public opinion and politics among business associations, labor unions, and political parties.
+      </p>
+      <p>
+        I emphasize the pivotal role of occupation as a micro-foundation of economic interest that shapes political choices.
+        Additionally, I investigate how social identities (e.g., race and gender), organizational affiliations (e.g., union membership),
+        and informational cues (e.g., educating policy implications) influence an individual’s political decisions.
+        My research sheds light on the multifaceted nature of political decision-making processes and preferences by unraveling
+        the dynamics between these factors and occupation, especially amidst significant societal changes.
+      </p>
+    </div>
+
+    <!-- Replace with your image -->
+    <img src="/assets/images/etc/research_image-min.png" alt="Research illustration - AI generated">
   </div>
 
   <hr>
@@ -65,9 +71,12 @@ description: Research overview of Jaewook Lee
     <h2>Working Papers</h2>
 
     <article class="paper">
-      <h3>Saving His Job, Not Hers: Selective Protection in Automation-Driven Job Loss <small>(Soohyun Cho and Jaewook Lee)</small></h3>
+      <h3>
+        Saving His Job, Not Hers: Selective Protection in Automation-Driven Job Loss
+        <small>(Soohyun Cho and Jaewook Lee)</small>
+      </h3>
       <a href="https://sase.org/events/2025-montreal/" target="_blank">
-        - Awarded SASE 2025 Early Career Workshop
+        – Awarded SASE 2025 Early Career Workshop
       </a>
       <details>
         <summary>Abstract</summary>
@@ -86,7 +95,10 @@ description: Research overview of Jaewook Lee
     </article>
 
     <article class="paper">
-      <h3>Green Backlash or Distributive Discontent? Welfare State Satisfaction and Public Support for Carbon Taxation <small>(Jaewook Lee and Marcello Natili)</small></h3>
+      <h3>
+        Green Backlash or Distributive Discontent? Welfare State Satisfaction and Public Support for Carbon Taxation
+        <small>(Jaewook Lee and Marcello Natili)</small>
+      </h3>
       <details>
         <summary>Abstract</summary>
         <p>
@@ -106,7 +118,10 @@ description: Research overview of Jaewook Lee
     </article>
 
     <article class="paper">
-      <h3>Teaching Machines to Read Occupations: Introducing the OPUS Dataset of Occupational Partisanship <small>(Scott Patterson, Krzysztof Pelc, and Jaewook Lee)</small></h3>
+      <h3>
+        Teaching Machines to Read Occupations: Introducing the OPUS Dataset of Occupational Partisanship
+        <small>(Scott Patterson, Krzysztof Pelc, and Jaewook Lee)</small>
+      </h3>
       <details>
         <summary>Abstract</summary>
         <p>
@@ -122,7 +137,10 @@ description: Research overview of Jaewook Lee
     </article>
 
     <article class="paper">
-      <h3>Managing Foreign Workers and Machines: Institutional Legacies, Employer Strategies, and Public Opinion in the UK and Sweden <small>(Jaewook Lee)</small></h3>
+      <h3>
+        Managing Foreign Workers and Machines: Institutional Legacies, Employer Strategies, and Public Opinion in the UK and Sweden
+        <small>(Jaewook Lee)</small>
+      </h3>
       <details>
         <summary>Abstract</summary>
         <p>
@@ -145,25 +163,27 @@ description: Research overview of Jaewook Lee
   <div class="work-in-progress">
     <h2>Work-in-Progress</h2>
 
-<article class="paper">
-  <h3>
-    Computing the Climate: How AI Infrastructure Shapes Public Support for Green Policy and AI Governance
-    <br>
-    <small>
-      <a href="https://connect.apsanet.org/centennialcenter/summer-centennial-center-research-grants/" target="_blank">
-        - Awarded APSA 2025 Centennial Center Research Grant
-      </a>
-    </small>
-  </h3>
-  <p>
-    This project examines how the rapid growth of AI data centers—major consumers of electricity and water—reshapes public attitudes toward climate policy and AI regulation.
-    Combining regional data across Europe with original surveys, it identifies when citizens demand greener technologies or tighter governance over compute infrastructure.
-  </p>
-</article>
-
+    <article class="paper">
+      <h3>
+        Computing the Climate: How AI Infrastructure Shapes Public Support for Green Policy and AI Governance
+        <br>
+        <small>
+          <a href="https://connect.apsanet.org/centennialcenter/summer-centennial-center-research-grants/" target="_blank">
+            – Awarded APSA 2025 Centennial Center Research Grant
+          </a>
+        </small>
+      </h3>
+      <p>
+        This project examines how the rapid growth of AI data centers—major consumers of electricity and water—reshapes public attitudes toward climate policy and AI regulation.
+        Combining regional data across Europe with original surveys, it identifies when citizens demand greener technologies or tighter governance over compute infrastructure.
+      </p>
+    </article>
 
     <article class="paper">
-      <h3>Uncertain Returns: Automation Risk and the Politics of Social Investment <small>(with Jiyeong Jeon)</small></h3>
+      <h3>
+        Uncertain Returns: Automation Risk and the Politics of Social Investment
+        <small>(with Jiyeong Jeon)</small>
+      </h3>
       <p>
         We argue that uncertainty about the effectiveness of reskilling in an age of rapid AI advancement drives workers to favor immediate compensation over long-term social investment.
         Using cross-national survey data, the study highlights how declining confidence in re-employment prospects under automation reshapes support for welfare policies.
@@ -171,7 +191,10 @@ description: Research overview of Jaewook Lee
     </article>
 
     <article class="paper">
-      <h3>European Competitiveness and Attitudes Towards EU Fiscal Integration <small>(with Lars van Doorn, Daniel Fernandes, and Olaf van Vliet)</small></h3>
+      <h3>
+        European Competitiveness and Attitudes Towards EU Fiscal Integration
+        <small>(with Lars van Doorn, Daniel Fernandes, and Olaf van Vliet)</small>
+      </h3>
       <p>
         This paper investigates how narratives about European economic competitiveness shape public preferences for EU-level fiscal integration.
         Through survey experiments across Europe, it shows that priming the need for building Europe-wide competitiveness increases support for fiscal coordination—
@@ -180,7 +203,10 @@ description: Research overview of Jaewook Lee
     </article>
 
     <article class="paper">
-      <h3>Macroeconomic Contexts, Employment Prospects, and Support for Welfare Chauvinism <small>(with Lars van Doorn, Daniel Fernandes, and Olaf van Vliet)</small></h3>
+      <h3>
+        Macroeconomic Contexts, Employment Prospects, and Support for Welfare Chauvinism
+        <small>(with Lars van Doorn, Daniel Fernandes, and Olaf van Vliet)</small>
+      </h3>
       <p>
         Drawing on a novel survey experiment across thirteen European countries, this paper tests whether economic growth or decline affects exclusionary welfare preferences.
         We find that personal economic optimism can paradoxically heighten welfare chauvinism, especially among socioeconomically disadvantaged respondents.
@@ -188,7 +214,10 @@ description: Research overview of Jaewook Lee
     </article>
 
     <article class="paper">
-      <h3>Occupational Asymmetry in American Electoral Campaign Finance <small>(with Scott Patterson)</small></h3>
+      <h3>
+        Occupational Asymmetry in American Electoral Campaign Finance
+        <small>(with Scott Patterson)</small>
+      </h3>
       <p>
         This study uses machine-learning classification of Federal Election Commission contribution data to map occupational inequalities in campaign finance.
         It reveals that donations are overwhelmingly concentrated among high-income professionals, underscoring the occupational roots of political inequality in the United States.
