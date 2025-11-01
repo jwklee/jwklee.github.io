@@ -9,9 +9,9 @@ positions:
 
 
 email: "to.jaewook.lee@gmail.com"
-cv_link: /assets/Jaewook Lee CV (2025_10_21).pdf
+cv_link: /assets/Jaewook Lee_CV_(2025_10_21).pdf
 gscholar: 0e9uxO0AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
+github: jwklee.github.io
 twitter: JaewookLee10  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
@@ -22,12 +22,19 @@ orcid: 0000-0001-8405-8469
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   Welcome to my website.
+    Hello, I am a Post-Doctoral Researcher at <strong>Leiden University</strong> (Universiteit Leiden).
+    I completed my Ph.D. in Political Science at <strong>Boston University</strong>, and previously worked
+    as a post-doctoral researcher at <strong>McGill University</strong> and the
+    <strong>University of Milan</strong> (Università degli Studi di Milano).
   </p>
   <p>
-    This site is under construction now.
-    I'm trying to see if this setting works well.
+    My research examines how structural economic transformations—such as automation,
+    globalization, and the green transition—shape public opinion, welfare states,
+    and political behavior in advanced capitalist democracies. I combine survey and
+    experimental methods, computer-assisted text analysis, and case studies to explore
+    how economic and social risks influence citizens’ policy preferences and democratic attitudes.
   </p>
+
 
 portrait_url: /assets/images/etc/jaewook_lee_photo_21.jpeg
 portrait_caption: >-
@@ -63,7 +70,21 @@ experience:
    date: Sep. 2022 - Sep. 2023
 
 awards:
-- name: Early Career Workshop Award (Society for the Advancement of Socio-Economics)
-  date: 2025
-- name: Best Paper Award on Social and Economic Inequality in Class and Inequality Section (American Political Science Association)
-  date: 2023
+  - name: APSA Centennial Center Research Grant (American Political Science Association)
+    date: 2025
+  - name: Early Career Workshop Award (Society for the Advancement of Socio-Economics)
+    date: 2025
+  - name: Korean Studies Grant 2024 (The Academy of Korean Studies)
+    date: 2023
+  - name: Best Paper Award on Social and Economic Inequality in Class and Inequality Section (American Political Science Association)
+    date: 2023
+  - name: Doctoral Research Fellowship (Boston University)
+    date: 2020–2021
+  - name: Howard Zinn Fellowship (Boston University)
+    date: 2020
+  - name: Graduate Teaching Fellowship (Boston University)
+    date: 2017–2022
+  - name: Dean’s Fellowship (Boston University)
+    date: 2016–2017
+  - name: National Research Scholarship (Korean Student Aid Foundation)
+    date: 2015
