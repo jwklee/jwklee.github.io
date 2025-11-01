@@ -6,39 +6,78 @@ description: Research overview of Jaewook Lee
 ---
 
 <style>
+  /* ===== Page Intro Layout ===== */
   .page-intro {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 2em;
-    margin-bottom: 2em;
+    gap: 2.5em;
+    margin-bottom: 2.5em;
   }
 
   .page-intro-text {
-    flex: 3;
+    flex: 2.5;
+    line-height: 1.7;
   }
 
   .page-intro img {
     flex: 1;
-    max-width: 180px;
+    max-width: 260px; /* increased from 180px */
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   }
 
   @media (max-width: 768px) {
     .page-intro {
       flex-direction: column;
       align-items: center;
+      text-align: left;
     }
 
     .page-intro img {
-      margin-top: 1.5em;
+      margin-top: 1.8em;
+      max-width: 80%;
     }
+  }
+
+  /* ===== Section Titles ===== */
+  .working-papers h2,
+  .work-in-progress h2 {
+    margin-bottom: 1.2em;
+  }
+
+  /* ===== Article Spacing & Readability ===== */
+  .paper {
+    margin-bottom: 3em; /* more spacing between entries */
+    line-height: 1.75;
+  }
+
+  .paper h3 {
+    font-size: 1.15em;
+    margin-bottom: 0.3em;
+  }
+
+  .paper a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 0.95em;
+  }
+
+  .paper a:hover {
+    text-decoration: underline;
+  }
+
+  details summary {
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 0.6em;
   }
 </style>
 
 <section class="research-page">
+  <!-- ===== Intro Section ===== -->
   <div class="page-intro">
     <div class="page-intro-text">
       <h1>Research</h1>
@@ -61,12 +100,12 @@ description: Research overview of Jaewook Lee
       </p>
     </div>
 
-    <!-- Replace with your image -->
-    <img src="/assets/images/etc/research_image-min.png" alt="Research illustration - AI generated">
+    <img src="/assets/images/etc/research_image-min.png" alt="Research illustration: Labor Migration, Automation, and Climate Change — AI Generated Image, Dutch Golden Age style">
   </div>
 
   <hr>
 
+  <!-- ===== Working Papers ===== -->
   <div class="working-papers">
     <h2>Working Papers</h2>
 
@@ -160,6 +199,7 @@ description: Research overview of Jaewook Lee
 
   <hr>
 
+  <!-- ===== Work-in-Progress ===== -->
   <div class="work-in-progress">
     <h2>Work-in-Progress</h2>
 
