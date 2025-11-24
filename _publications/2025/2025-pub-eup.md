@@ -3,8 +3,8 @@ title:          "Pushed by Markets, Pulled by Machines: Economic Pressures and B
 date:           2025-11-24 00:01:00 +0100
 selected:       true
 pub:            "European Union Politics"
-pub_date:       "Online First"
-pub_last:       '<span class="badge badge-pill badge-publication badge-info">Forthcoming</span>'
+pub_date:       ""
+pub_last:       '<span class="badge badge-pill badge-publication badge-info">Online First</span>'
 semantic_scholar_id:
 abstract: >-
   This study shows how automation and globalization jointly fuel Euroskepticism.
