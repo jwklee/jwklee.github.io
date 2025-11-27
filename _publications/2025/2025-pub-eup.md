@@ -10,7 +10,7 @@ abstract: >-
   This study shows how automation and globalization jointly fuel Euroskepticism.
   Using European Social Survey data, it finds that routine-task workers in export-exposed sectors
   are especially prone to oppose the EU when they perceive society as unfair and favor redistribution.
-cover:
+cover: /assets/images/cover/eup_pub_2025_cover.png
 authors:
   - Jaewook Lee
 links:
