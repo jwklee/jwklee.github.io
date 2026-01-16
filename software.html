@@ -1,0 +1,171 @@
+---
+layout: page
+title: Software & Data
+navbar_title: Software & Data
+description: Software packages and datasets by Jaewook Lee
+---
+
+<style>
+  /* ===== Page Intro Layout ===== */
+  .page-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5em;
+    margin-bottom: 2.5em;
+  }
+
+  .page-intro-text {
+    flex: 2.5;
+    line-height: 1.7;
+  }
+
+  .image-container {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  .image-caption {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.6em;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .page-intro {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+
+    .image-container img {
+      margin-top: 1.8em;
+      max-width: 80%;
+    }
+
+    .image-caption {
+      max-width: 80%;
+    }
+  }
+
+  /* ===== Section Titles ===== */
+  .software-section h2 {
+    margin-bottom: 1.2em;
+    margin-top: 2em;
+  }
+
+  /* ===== Item Spacing & Readability ===== */
+  .software-item {
+    margin-bottom: 3em;
+    line-height: 1.75;
+    padding: 1.5em;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1a73e8;
+  }
+
+  .software-item h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    color: #1a73e8;
+  }
+
+  .software-item p {
+    margin-bottom: 1em;
+  }
+
+  .software-item .links {
+    margin-top: 1em;
+  }
+
+  .software-item a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 500;
+    margin-right: 1.5em;
+  }
+
+  .software-item a:hover {
+    text-decoration: underline;
+  }
+
+  .software-item .badge {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  /* ===== Placeholder Section ===== */
+  .placeholder {
+    padding: 2em;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+</style>
+
+<section class="software-page">
+
+  <!-- ===== Intro Section ===== -->
+  <div class="page-intro">
+    <div class="page-intro-text">
+      <h1>Software & Data</h1>
+      <p>
+        I develop and maintain open-source research software and datasets to support empirical research
+        in social science. These resources are designed
+        to be accessible, well-documented, and easily integrated into academic workflows.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- ===== R Packages Section ===== -->
+  <div class="software-section">
+    <h2><i class="fab fa-r-project"></i> R Packages</h2>
+
+    <article class="software-item">
+      <h3>occupationRiskPack</h3>
+      <p>
+        A unified R package for accessing and analyzing occupation-level risk variables commonly used in
+        labor economics, political economy, and sociological research. The package consolidates data from
+        multiple authoritative sources into a consistent framework built around standardized occupation
+        classification systems.
+      </p>
+
+      <div class="links">
+        <a href="https://github.com/jwklee/occupationRiskPack" target="_blank">
+          <i class="fab fa-github"></i> GitHub Repository
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+  <hr>
+
+  <!-- ===== Datasets Section ===== -->
+  <div class="software-section">
+    <h2><i class="fas fa-database"></i> Datasets</h2>
+
+    <div class="placeholder">
+      <p>Additional datasets and software packages will be added as they become available. Stay tuned!</p>
+    </div>
+
+  </div>
+
+</section>
