@@ -1,0 +1,20 @@
+---
+title:          "Climate Policy under Economic Uncertainty: Confidence in the Welfare State and Support for Carbon Taxation""
+date:           2026-06-19 00:01:00 +0100
+selected:       true
+pub:            "Journal of Public Policy"
+pub_date:       "2026"
+# pub_pre:      ""
+# pub_post:     ""
+pub_last:       '<span class="badge badge-pill badge-publication badge-warning">Forthcoming</span>'
+semantic_scholar_id:
+abstract: >-
+  This study shows how confidence in the welfare state shapes support for carbon taxation under economic uncertainty.
+  Using survey data from seven European countries, it finds that social policy satisfaction helps build support for climate policy.
+cover:
+authors:
+  - Jaewook Lee
+  - Marcello Natili
+links:
+  Preprint: https://drive.google.com/file/d/1IgXI5IcPrMno8-RyRUqtLJStJXltVvFs/view?usp=sharing
+---
