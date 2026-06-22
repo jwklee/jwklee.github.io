@@ -4,8 +4,6 @@ date:           2026-06-19 00:01:00 +0100
 selected:       true
 pub:            "Journal of Public Policy"
 pub_date:       "2026"
-# pub_pre:      ""
-# pub_post:     ""
 pub_last:       '<span class="badge badge-pill badge-publication badge-warning">Forthcoming</span>'
 semantic_scholar_id:
 abstract: >-
