@@ -1,5 +1,5 @@
 ---
-title:          "Climate Policy under Economic Uncertainty: Confidence in the Welfare State and Support for Carbon Taxation""
+title:          "Climate Policy under Economic Uncertainty: Confidence in the Welfare State and Support for Carbon Taxation"
 date:           2026-06-19 00:01:00 +0100
 selected:       true
 pub:            "Journal of Public Policy"
