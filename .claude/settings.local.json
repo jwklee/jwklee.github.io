@@ -4,7 +4,20 @@
       "Bash(git config:*)",
       "Read(//Users/jwklee/**)",
       "Bash(test:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/images/etc/research_image_min_2.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/images/luddites.jpg assets/images/migration_lawrence.jpg)",
+      "Bash(ls \"/Applications/Google Chrome.app/Contents/MacOS/\" 2>/dev/null; which jekyll bundle 2>/dev/null; ls _layouts; grep -rn \"research_image_min_2\\\\|luddites\\\\|migration_lawrence\" --include=\"*.html\" --include=\"*.md\" --include=\"*.yml\" . 2>/dev/null | grep -v \"^./_site\" | grep -v CLAUDE.md)",
+      "Read(//Applications/Google Chrome.app/Contents/MacOS/**)",
+      "WebFetch(domain:www.arthistoryproject.com)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(sips --resampleWidth 700 -s formatOptions 82 assets/images/migration_lawrence.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/images/migration_lawrence.jpg)",
+      "WebFetch(domain:jwklee.github.io)",
+      "Bash(curl -sSL -A 'jwklee-site-image-fetch/1.0 \\(personal academic website\\)' -o /private/tmp/claude-501/-Users-jwklee-GITHUB-LOCAL-jwklee-github-io/fb738492-cb9f-41fe-92e9-fa9556b091b9/scratchpad/dl_steerage/steerage.jpg -w '%{http_code} %{content_type} %{size_download}\\\\n' https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_Stieglitz_-_The_Steerage_-_Google_Art_Project.jpg?width=800)",
+      "Bash(sips -g pixelWidth -g pixelHeight /private/tmp/claude-501/-Users-jwklee-GITHUB-LOCAL-jwklee-github-io/fb738492-cb9f-41fe-92e9-fa9556b091b9/scratchpad/dl_steerage/steerage.jpg)",
+      "Bash(sips --resampleWidth 700 -s formatOptions 82 /private/tmp/claude-501/-Users-jwklee-GITHUB-LOCAL-jwklee-github-io/fb738492-cb9f-41fe-92e9-fa9556b091b9/scratchpad/dl_steerage/steerage.jpg --out assets/images/steerage.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/images/steerage.jpg)"
     ],
     "deny": [],
     "ask": []

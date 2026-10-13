@@ -20,13 +20,41 @@ description: Research overview of Jaewook Lee
     line-height: 1.7;
   }
 
-  .page-intro img {
+  /* ===== Intro Images ===== */
+  .image-container {
     flex: 1.5;
-    max-width: 450px; /* increased from 180px */
+    max-width: 450px;
+    margin: 0;
+  }
+
+  .image-pair {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8em;
+  }
+
+  /* flex-grow is each image's width/height ratio, so the pair renders at equal height */
+  .image-pair div {
+    flex-basis: 0;
+    min-width: 0;
+  }
+
+  .image-pair .img-luddites { flex-grow: 0.758; }
+  .image-pair .img-steerage { flex-grow: 0.797; }
+
+  .image-pair img {
+    display: block;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+    border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  .image-caption {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 0.8em;
+    line-height: 1.4;
   }
 
   @media (max-width: 768px) {
@@ -36,40 +64,10 @@ description: Research overview of Jaewook Lee
       text-align: left;
     }
 
-    .page-intro img {
-      margin-top: 1.8em;
-      max-width: 80%;
-    }
-
     .image-container {
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* keep image + caption centered within the column */
+      flex: none;
+      width: 100%;
     }
-    
-    .image-container img {
-      max-width: 250px;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-    }
-    
-    .image-caption {
-      font-size: 0.85em;
-      color: #666;
-      margin-top: 0.6em;
-      line-height: 1.4;
-      text-align: center;
-    }
-}
-
-    .image-caption details summary {
-      cursor: pointer;
-      list-style: none;
-    }
-    .image-caption details summary::-webkit-details-marker { display: none; }
   }
 
   /* ===== Section Titles ===== */
@@ -112,35 +110,40 @@ description: Research overview of Jaewook Lee
     <div class="page-intro-text">
       <h1>Research</h1>
       <p>
-        Automation, immigration, and climate policy are redrawing who gains and who loses in advanced economies &mdash; and, with that, what voters, workers, and employers ask of the state.
-        My research studies how people exposed to these pressures form political preferences, and especially how they decide whom the welfare state should protect.
-        A recurring theme is occupation: the work people do shapes the risks they face, and those risks shape the policies they support.
+        Automation, immigration, and climate policy are redrawing who gains and who loses in advanced economies. In turn, they shape what voters, workers, and employers ask of the state.
+        My research studies what people exposed to these pressures want from the welfare state, both the kind of social and economic protection they favor and whom they think it should cover.
       </p>
       <p>
-        My dissertation, <em>Politics Navigating Macroeconomic Transformations: Labor Migration and Automation in Western Europe</em>,
-        examines two forces that are at once economically valuable and threatening to jobs.
-        I trace how the twin pressures of migration and automation reshape public support for social welfare across different national and institutional settings.
+        What people want often depends on who is losing and why.
+        People react differently to the same job loss when the worker is a woman instead of a man, or when the job goes to a migrant worker instead of a machine.
+        I am interested in these judgments about who deserves protection and in how they carry into support for social policy.
+        More recently, I have turned to the politics of AI infrastructure, where the costs of technological change fall on communities as well as on workers.
       </p>
       <p>
-        Across these projects, I begin from material interest &mdash; structurally conditioned by where people sit in the labor market &mdash; but I do not stop there.
-        Combining survey experiments with a computational social science approach to occupational and text data, I show how social identity (e.g., gender),
-        institutional context (e.g., industrial relations and the welfare state), and how policy choices are framed shape the way people turn economic risk into political demands.
+        I begin from material interest, which I often approach through occupation.
+        The work people do shapes the risks they face, and those risks shape the policies they support.
+        However, material interest is only half the story.
+        People who face the same risk often ask for different things, because their social identity, the institutions around them, and the way a policy is framed all affect how economic risk turns into political demands.
+        Sorting these out takes more than one kind of evidence, so I work across methods: survey analysis, experiments, computational approaches to text, and case studies.
       </p>
     </div>
 
-  <div class="image-container">
-    <img src="/assets/images/etc/research_image_min_2.png"
-         alt="Research illustration: Labor Migration, Automation, and Climate Change">
-    <p class="image-caption">
-      <em> AI-generated image, </em> GPT Image 2 <br>
-        <details>
-         <summary> Prompt </summary>
-        "Draw a Dutch painting in the 17th-century style, <br>
-        showing people facing challenges from labor migration (left), <br>
-        automation (center), and climate change (right), <br>
-        people are both worried and happy.”
-        </details>
-  </div>
+  <figure class="image-container">
+    <div class="image-pair">
+      <div class="img-luddites">
+        <img src="/assets/images/luddites.jpg"
+             alt="The Leader of the Luddites, an 1812 etching of a figure urging on a crowd as a mill burns behind them">
+      </div>
+      <div class="img-steerage">
+        <img src="/assets/images/steerage.jpg"
+             alt="Alfred Stieglitz, The Steerage, a 1907 photograph of passengers crowded on the upper and lower decks of an ocean liner">
+      </div>
+    </div>
+    <figcaption class="image-caption">
+      Left: <em>The Leader of the Luddites</em>, 1812, hand-colored etching. Public domain, via Wikimedia Commons.<br>
+      Right: Alfred Stieglitz, <em>The Steerage</em>, 1907, photogravure. Public domain, via Wikimedia Commons.
+    </figcaption>
+  </figure>
 </div>
 
 
@@ -239,7 +242,7 @@ description: Research overview of Jaewook Lee
         </small>
       </h3>
       <p>
-        Combining geocoded data center locations with county-level 2024 election results, this study finds that exposure is most clearly associated with greater Green/protest voting.
+        Combining geocoded data center locations with county-level 2024 election results, this study finds that exposure is associated with greater Green/protest voting.
         An original survey experiment shows that environmental and economic cost frames increase willingness to vote against pro-data-center candidates and support for ending tax breaks across party lines.
       </p>
     </article>
