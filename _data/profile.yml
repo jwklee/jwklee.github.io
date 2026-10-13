@@ -3,9 +3,9 @@ secondary_name: ""
 navbar_name: "Jaewook Lee"
 
 positions:
-- name: Post-Doctoral Researcher
-- name: Leiden University
-  logo: /assets/images/badges/leiden_seal.png  # Logo is optional
+- name: Assistant Professor
+- name: Soochow University
+  logo: /assets/images/badges/SU_logo.svg  # Logo is optional
 
 
 email: "to.jaewook.lee@gmail.com"
@@ -22,10 +22,10 @@ orcid: 0000-0001-8405-8469
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hello, I am a Post-Doctoral Researcher at <strong>Leiden University</strong> (Universiteit Leiden).
+    Hello, I am an Assistant Professor at <strong>Soochow University</strong>.
     I completed my Ph.D. in Political Science at <strong>Boston University</strong>, and previously worked
-    as a post-doctoral researcher at <strong>McGill University</strong> and the
-    <strong>University of Milan</strong> (Università degli Studi di Milano).
+    as a post-doctoral researcher at <strong>Leiden University</strong>, the
+    <strong>University of Milan</strong> (Università degli Studi di Milano), and <strong>McGill University</strong>.
   </p>
   <p>
     My research examines how structural economic transformations—such as automation,
@@ -56,10 +56,14 @@ education:
   date: Mar. 2005 - Feb. 2009
 
 experience:
+ - name: Soochow University
+   logo: /assets/images/badges/SU_logo.svg
+   position: Assistant Professor
+   date: Sep. 2026 - Current
  - name: Leiden University
    logo: /assets/images/badges/leiden_seal.png
    position: Post-Doctoral Researcher
-   date: Nov. 2024 - Current
+   date: Nov. 2024 - Aug. 2026
  - name: University of Milan
    logo: /assets/images/badges/u_of_milan_seal.png
    position: Post-Doctoral Researcher

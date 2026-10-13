@@ -1,7 +1,7 @@
 # Jaewook Lee Academic Website - Structure Map
 
 ## Overview
-This is a Jekyll-based academic website for Jaewook Lee, a Post-Doctoral Researcher in Political Science. The site showcases his research, publications, teaching, and translations. Built using the [academic-homepage](https://github.com/luost26/academic-homepage) template.
+This is a Jekyll-based academic website for Jaewook Lee, an Assistant Professor at Soochow University. The site showcases his research, publications, teaching, and translations. Built using the [academic-homepage](https://github.com/luost26/academic-homepage) template.
 
 ## Site Architecture
 
@@ -39,12 +39,12 @@ Data files that control site content and behavior:
 #### `profile.yml`
 Personal information and professional details:
 - **Identity**: Primary/secondary name, navbar name
-- **Positions**: Current position at Leiden University
+- **Positions**: Current position at Soochow University
 - **Contact**: Email, CV link, social media handles (Google Scholar, GitHub, Twitter, ORCID)
 - **Bio**: Short biography with research interests
 - **Portrait**: Photo and caption
 - **Education**: 3 degrees (Boston University PhD, Seoul National University MA & BA)
-- **Experience**: Post-doc positions at Leiden, Milan, McGill
+- **Experience**: Assistant professorship at Soochow and post-doc positions at Leiden, Milan, and McGill
 - **Awards**: 9 awards and fellowships (2015-2025)
 
 #### `navigation.yml`
@@ -104,12 +104,13 @@ Alternative layout (usage not immediately clear from inspection)
     2. "Green Backlash or Distributive Discontent?" (with Marcello Natili)
     3. "Teaching Machines to Read Occupations" (with Scott Patterson & Krzysztof Pelc)
     4. "Managing Foreign Workers and Machines" (solo)
-  - Work-in-Progress (5 projects):
-    1. Climate Costs of Computing - APSA 2025 Grant
-    2. Uncertain Returns (with Jiyeong Jeon)
-    3. European Competitiveness (with van Doorn, Fernandes, van Vliet)
-    4. Macroeconomic Contexts (with van Doorn, Fernandes, van Vliet)
-    5. Occupational Asymmetry (with Scott Patterson)
+  - Work-in-Progress (6 projects):
+    1. Beyond Party Lines?
+    2. The Electoral Costs of Computing - APSA 2025 Grant
+    3. Uncertain Returns (with Jiyeong Jeon)
+    4. European Competitiveness (with Lars van Doorn and Olaf van Vliet)
+    5. When Growth Breeds Exclusion (with Lars van Doorn and Olaf van Vliet)
+    6. Occupational Asymmetry (with Scott Patterson)
 - Responsive image layout with captions
 
 ### `teaching.html`
@@ -202,7 +203,7 @@ Reusable components included in pages:
 
 ### `/assets/images/`
 Organized by purpose:
-- `badges/` - University/institution logos (Boston U, Leiden, McGill, Milan, SNU)
+- `badges/` - University/institution logos (Boston U, Soochow, Leiden, McGill, Milan, SNU)
 - `covers/` - Publication cover images
 - `photos/` - Photo collections
 - `etc/` - Miscellaneous images
